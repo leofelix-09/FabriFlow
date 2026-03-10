@@ -17,7 +17,7 @@ import {
   RegisterSchema,
   LoginSchema
 } from "../shared/types.js";
-import bcrypt from "bcryptjs";
+import * as bcrypt from "bcrypt-ts";
 
 import { createSupabaseClient } from "./supabase.js";
 
@@ -1952,7 +1952,7 @@ app.patch("/api/user/profile", customAuthMiddleware, async (c) => {
         return c.json({ error: "Usuário não encontrado" }, 404);
       }
 
-      const bcrypt = await import('bcryptjs');
+      const bcrypt = await import('bcrypt-ts');
       const validPassword = await bcrypt.compare(senha_atual, currentUser.senha);
       if (!validPassword) {
         return c.json({ error: "Senha atual incorreta" }, 401);
