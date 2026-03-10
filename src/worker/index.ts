@@ -2316,6 +2316,9 @@ async function criarNotificacao(supabase: any, userId: number, pedidoId: number,
 
 
 
+// Named export for Vercel adapter
+export { app };
+
 // Export as Cloudflare Worker
 export default {
   async fetch(request: Request, env: Env): Promise<Response> {
