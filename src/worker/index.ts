@@ -16,10 +16,10 @@ import {
   CriarPedidoSchema,
   RegisterSchema,
   LoginSchema
-} from "@/shared/types";
+} from "../shared/types.js";
 import bcrypt from "bcryptjs";
 
-import { createSupabaseClient } from "./supabase";
+import { createSupabaseClient } from "./supabase.js";
 
 interface Env {
   SUPABASE_URL: string;

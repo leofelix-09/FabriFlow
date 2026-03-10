@@ -1,5 +1,5 @@
 // @ts-nocheck
-import { app } from '../src/worker/index.ts';
+import { app } from '../src/worker/index.js';
 
 export const config = {
     runtime: 'edge',
