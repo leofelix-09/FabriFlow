@@ -1,0 +1,11 @@
+
+CREATE TABLE desenhos_tecnicos (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  peca_id INTEGER NOT NULL,
+  nome_arquivo TEXT NOT NULL,
+  url TEXT NOT NULL,
+  tipo_arquivo TEXT NOT NULL,
+  tamanho INTEGER NOT NULL,
+  created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+  updated_at DATETIME DEFAULT CURRENT_TIMESTAMP
+);

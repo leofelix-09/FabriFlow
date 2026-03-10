@@ -1,0 +1,30 @@
+dist/
+node_modules/
+.wrangler/
+.dev.vars
+worker-configuration.d.ts
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Gemini agent
+.gemini/
+
+# Agent config
+.agent/
+
+# TestSprite
+.testsprite/

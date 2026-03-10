@@ -1,0 +1,7 @@
+
+CREATE TABLE evidencias_recentes (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  pedido_id INTEGER NOT NULL,
+  etapa_nome TEXT NOT NULL,
+  created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+);

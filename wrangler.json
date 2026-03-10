@@ -1,0 +1,27 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "01997c73-e6d2-7dbc-8410-092d1d16ba67",
+  "main": "./src/worker/index.ts",
+  "compatibility_date": "2025-06-17",
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
+  "observability": {
+    "enabled": true
+  },
+  "upload_source_maps": true,
+  "assets": {
+    "not_found_handling": "single-page-application"
+  },
+  "r2_buckets": [
+    {
+      "binding": "R2_BUCKET",
+      "bucket_name": "01997c73-e6d2-7dbc-8410-092d1d16ba67"
+    }
+  ],
+  "vars": {
+    "SUPABASE_URL": "https://tdmckjkdddxutqwpdwhs.supabase.co",
+    "SUPABASE_KEY": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRkbWNramtkZGR4dXRxd3Bkd2hzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzMwOTE1NzEsImV4cCI6MjA4ODY2NzU3MX0.2z9SioYGqG5yvjwCOKbD64jdexNtLyEWQ2IGkyd9Ruk",
+    "SUPABASE_SERVICE_ROLE_KEY": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRkbWNramtkZGR4dXRxd3Bkd2hzIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc3MzA5MTU3MSwiZXhwIjoyMDg4NjY3NTcxfQ.AV6C53UkxwUhoXdxWF_lzKjf17WStRg3zLuOVBGi-J8"
+  }
+}

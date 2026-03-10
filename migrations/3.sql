@@ -1,0 +1,2 @@
+
+ALTER TABLE fornecedores ADD COLUMN ativo BOOLEAN DEFAULT TRUE;

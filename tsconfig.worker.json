@@ -1,0 +1,22 @@
+{
+  "extends": "./tsconfig.node.json",
+  "compilerOptions": {
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.worker.tsbuildinfo",
+    "types": [
+      "vite/client"
+    ],
+    "baseUrl": ".",
+    "lib": [
+      "ES2023",
+      "DOM"
+    ],
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ]
+    }
+  },
+  "include": [
+    "src/worker"
+  ]
+}
